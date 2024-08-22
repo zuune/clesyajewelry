@@ -1189,6 +1189,7 @@ Best Deal Style
   overflow: hidden;
   display: flex;
   padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .logo-container .logo {
@@ -1422,6 +1423,41 @@ Contact Style
 
 .contact-content #contact-form button:hover {
   background-color: #f35525;
+}
+
+
+/* Gallery Section */
+
+.gallery-section {
+  padding: 50px 0;
+  text-align: center;
+}
+.gallery-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0 20px;
+}
+
+.gallery-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.gallery-card img {
+  width: 100%;
+  max-height: 200px; /* Mengatur tinggi maksimal gambar */
+  object-fit: cover;  /* Menjaga gambar agar fit di dalam card tanpa distorsi */
+  display: block;
+}
+
+.gallery-card p {
+  padding: 15px;
+  font-size: 1em;
+  color: #333;
 }
 
 
